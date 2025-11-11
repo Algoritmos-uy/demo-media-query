@@ -1,18 +1,15 @@
-/* ===== Reset y configuración base ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilos generales del body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
 
-/* ===== Header ===== */
 header {
     background: #50b3a2;
     color: white;
@@ -21,7 +18,6 @@ header {
     margin-bottom: 20px;
 }
 
-/* ===== Contenedor principal ===== */
 .container {
     width: 90%;
     margin: auto;
@@ -29,16 +25,12 @@ header {
     padding: 10px 0;
 }
 
-/* ===== Sistema de Grid ===== */
-/* Grid de 4 columnas por defecto (escritorio) */
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
 }
 
-/* ===== Tarjetas (Cards) ===== */
-/* Contenedor de cada tarjeta */
 .card {
     background: white;
     border: 1px solid #eee;
@@ -48,7 +40,6 @@ header {
     text-align: center;
 }
 
-/* Imágenes dentro de las tarjetas */
 .card img {
     max-width: 100%;
     height: auto;
@@ -56,8 +47,6 @@ header {
     border: 2px solid #ccc;
 }
 
-/* ===== Footer ===== */
-/* Footer fijo en la parte inferior de la pantalla */
 footer {
     position: fixed;
     bottom: 0;
