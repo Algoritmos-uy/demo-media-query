@@ -3,10 +3,12 @@ Primer proyecto demostrativo mobile  first
 demo-media-query
 Descripción del Proyecto
 
-Este proyecto es una demostración práctica del uso de Media Queries en CSS, aplicando el enfoque Mobile First para crear diseños web responsivos y adaptativos.
+Este proyecto es una demostración práctica del uso de Media Queries en CSS, aplicando el enfoque 
+Mobile First para crear diseños web responsivos y adaptativos.
 ¿Qué son las Media Queries?
 
-Las Media Queries son una característica de CSS3 que permite aplicar estilos específicos según las características del dispositivo donde se visualiza la página web, como:
+Las Media Queries son una característica de CSS3 que permite aplicar estilos específicos 
+según las características del dispositivo donde se visualiza la página web, como:
 
     Ancho y alto de la pantalla
     Orientación del dispositivo (horizontal o vertical)
@@ -17,9 +19,12 @@ Enfoque Mobile First
 
 El enfoque Mobile First es una estrategia de diseño web que consiste en:
 
-    Diseñar primero para dispositivos móviles: Se comienza con el diseño más simple y optimizado para pantallas pequeñas
-    Expandir progresivamente: Se agregan estilos y funcionalidades adicionales para pantallas más grandes mediante media queries
-    Optimización del rendimiento: Los dispositivos móviles cargan solo los estilos esenciales, mejorando la velocidad de carga
+    Diseñar primero para dispositivos móviles: Se comienza con el diseño más simple y optimizado para 
+    pantallas pequeñas
+    Expandir progresivamente: Se agregan estilos y funcionalidades adicionales para pantallas 
+    más grandes mediante media queries
+    Optimización del rendimiento: Los dispositivos móviles cargan solo los estilos esenciales, 
+    mejorando la velocidad de carga
 
 Ventajas del Mobile First
 
