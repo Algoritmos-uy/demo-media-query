@@ -59,7 +59,7 @@ propiedad: clamp(mínimo, valor-preferido, máximo);
 2. **Valor preferido**: El valor ideal (generalmente en unidades relativas como `vw`)
 3. **Máximo**: El valor más grande permitido
 
-### Ejemplo Práctico
+### Ejemplo Práctico 2
 
 ```css
 font-size: clamp(1rem, 2.5vw, 3rem);
@@ -147,11 +147,69 @@ El tamaño del header se ajusta progresivamente:
 2. **Redimensiona la ventana**: Arrastra el borde para ver los cambios
 3. **Dispositivos reales**: La mejor forma de verificar
 
-## 📚 Recursos Adicionales
+## � ¿Qué es .gitignore?
+
+El archivo `.gitignore` es un archivo de configuración de Git que le indica qué archivos o carpetas **NO deben ser rastreados** por el sistema de control de versiones.
+
+### ¿Por qué es importante?
+
+Cuando trabajas en un proyecto, no todos los archivos deben ser compartidos en el repositorio. Algunos archivos son:
+
+- 🔐 **Sensibles**: Claves de API, contraseñas, tokens
+- 📦 **Generados automáticamente**: Carpetas `node_modules`, archivos compilados
+- 👤 **Personales**: Configuraciones de tu editor (`.vscode`, `.idea`)
+- 🗑️ **Temporales**: Archivos de caché, logs, backups
+
+### Sintaxis Básica para gitignore
+
+```gitignore
+# Ignorar un archivo específico
+config.env
+
+# Ignorar todos los archivos con extensión .log
+*.log
+
+# Ignorar una carpeta completa
+node_modules/
+
+# Ignorar archivos en cualquier carpeta de nombre 'temp'
+**/temp/
+
+# Excepción: NO ignorar este archivo específico
+!important.log
+```
+
+### Ejemplo Común para Proyectos Web
+
+Ver el archivo .gitignore de este proyecto.
+
+### Buenas Prácticas
+
+✅ **Créalo al inicio**: Añade `.gitignore` desde el primer commit  
+✅ **Usa plantillas**: GitHub ofrece plantillas predefinidas para diferentes lenguajes  
+✅ **Nunca subas secretos**: Siempre ignora archivos con información sensible  
+✅ **Revisa antes de commitear**: Verifica qué archivos estás incluyendo con `git status`
+
+### Comandos Útiles
+
+```bash
+# Ver archivos ignorados
+git status --ignored
+
+# Limpiar archivos ignorados del repositorio
+git rm -r --cached .
+git add .
+git commit -m "Apply .gitignore"
+```
+
+💡 **Tip**: Si accidentalmente subiste un archivo que debería estar ignorado, agrégalo a `.gitignore` y ejecuta `git rm --cached nombre-archivo` para eliminarlo del repositorio sin borrarlo de tu disco.
+
+## �📚 Recursos Adicionales
 
 - [MDN - Using Media Queries](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries)
 - [MDN - clamp()](https://developer.mozilla.org/es/docs/Web/CSS/clamp)
 - [CSS-Tricks - A Complete Guide to CSS Media Queries](https://css-tricks.com/a-complete-guide-to-css-media-queries/)
+- [GitHub - Plantillas de .gitignore](https://github.com/github/gitignore)
 
 ---
 
